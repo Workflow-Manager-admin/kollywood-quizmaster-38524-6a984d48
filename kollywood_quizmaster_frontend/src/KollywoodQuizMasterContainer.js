@@ -10,7 +10,10 @@ import React, { useState } from "react";
  * clearly structured for follow-on development.
  */
 
-// PUBLIC_INTERFACE
+/*
+PUBLIC_INTERFACE
+KollywoodQuizMasterContainer - Themed Kollywood app container with vibrant colors & movie-style accents.
+*/
 function KollywoodQuizMasterContainer() {
   // State tracking login and selected quiz mode
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -22,38 +25,38 @@ function KollywoodQuizMasterContainer() {
     {
       key: "blurred-poster",
       label: "Blurred Poster Guess",
-      description:
-        "Guess the Kollywood movie from a blurred poster using clues. Option to skip or reveal answer.",
+      description: "Guess the Kollywood movie from a blurred poster using clues. Option to skip or reveal answer.",
+      icon: "🎥",
     },
     {
       key: "character-movie-match",
       label: "Character-Movie Match",
-      description:
-        "Drag and drop character names into the correct Kollywood movies.",
+      description: "Drag and drop character names into the correct Kollywood movies.",
+      icon: "🎭",
     },
     {
       key: "movie-bingo",
       label: "Movie Bingo",
-      description:
-        "Click on movies matching given categories, such as awards or genres.",
+      description: "Click on movies matching given categories, such as awards or genres.",
+      icon: "🎲",
     },
     {
       key: "timeline-challenge",
       label: "Movie Timeline Challenge",
-      description:
-        "Arrange Kollywood movies in the correct chronological order of release.",
+      description: "Arrange Kollywood movies in the correct chronological order of release.",
+      icon: "⏳",
     },
     {
       key: "spin-wheel",
       label: "Spin the Wheel",
-      description:
-        "Spin for an actor, actress, and year, then guess the movie featuring all three.",
+      description: "Spin for an actor, actress, and year, then guess the movie featuring all three.",
+      icon: "🎡",
     },
     {
       key: "cast-combo",
       label: "Cast Combo",
-      description:
-        "Guess the movie with 2–3 given actors; bonus: reverse mode to guess the actor not in a movie.",
+      description: "Guess the movie with 2–3 given actors; bonus: reverse mode to guess the actor not in a movie.",
+      icon: "👥",
     },
   ];
 
@@ -67,35 +70,34 @@ function KollywoodQuizMasterContainer() {
         style={{
           maxWidth: 420,
           margin: "120px auto 0",
-          background: "rgba(14,12,12,0.88)",
-          borderRadius: "14px",
-          boxShadow: "0 4px 24px #e302dc33",
-          padding: "40px 32px",
+          background: "rgba(14,12,12,0.94)",
+          borderRadius: "18px",
+          boxShadow: "0 7px 36px 0 #e302dc44, 0 0 0 9px #d4fe0117",
+          padding: "44px 34px",
           color: "#fff",
+          position: "relative",
         }}
+        className="kolly-backdrop"
       >
+        <div className="kolly-movie-strip" />
         <h2
+          className="kolly-section-header"
           style={{
-            color: "#e302dc",
-            textAlign: "center",
-            marginBottom: 24,
-            letterSpacing: ".02rem",
+            fontSize: "2.12rem",
+            marginBottom: 18,
+            textShadow: "0 1px 9px #d4fe0142, 0 0 5px #e302dc88",
           }}
         >
           Welcome to Kollywood QuizMaster
         </h2>
-        <div style={{ marginBottom: 18, textAlign: "center" }}>
-          <span
-            style={{
-              display: "inline-block",
-              background: "#d4fe01",
-              color: "#0e0c0c",
-              borderRadius: 12,
-              padding: "8px 18px",
-              fontWeight: 600,
-              fontSize: "1.1rem",
-            }}
-          >
+        <div className="kolly-movie-dots" aria-hidden>
+          <span className="kolly-dot" />
+          <span className="kolly-dot" />
+          <span className="kolly-dot" />
+          <span className="kolly-dot" />
+        </div>
+        <div style={{ marginBottom: 22, textAlign: "center" }}>
+          <span className="kolly-highlight">
             Login to Play
           </span>
         </div>
@@ -108,10 +110,10 @@ function KollywoodQuizMasterContainer() {
         </button>
         <div
           style={{
-            fontSize: 13,
-            color: "#eee",
+            fontSize: 13.7,
+            color: "#e0e0e0",
             opacity: 0.7,
-            marginTop: 16,
+            marginTop: 18,
             textAlign: "center",
           }}
         >
@@ -124,96 +126,102 @@ function KollywoodQuizMasterContainer() {
   // PUBLIC_INTERFACE
   function ModeDashboard({ onSelectMode }) {
     return (
-      <div className="container" style={{ paddingTop: "120px", paddingBottom: "32px" }}>
-        <div style={{ textAlign: "center", marginBottom: 48 }}>
-          <h1
-            style={{
-              fontSize: "2.4rem",
-              letterSpacing: 0.5,
-              fontWeight: 700,
-              color: "#e302dc",
-              marginBottom: 8,
-            }}
-          >
-            Kollywood QuizMaster 🎬
-          </h1>
-          <div
-            style={{
-              color: "#d4fe01",
-              fontSize: "1.14rem",
-              fontWeight: 500,
-              marginBottom: 8,
-            }}
-          >
-            Choose your Kollywood quiz adventure!
-          </div>
-          <div style={{ color: "#eee", opacity: 0.77, fontSize: 16 }}>
-            Each mode offers 10 movie challenges, clues, movie vibes & results!
-          </div>
-        </div>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(270px, 1fr))",
-            gap: 32,
-          }}
-        >
-          {quizModes.map((mode) => (
-            <section
-              key={mode.key}
+      <div className="kolly-container kolly-fullwidth">
+        <div className="container" style={{ paddingBottom: "32px" }}>
+          <div style={{ textAlign: "center", marginBottom: 48 }}>
+            <h1 className="kolly-section-header" style={{marginBottom: "10px"}}>
+              <span className="kolly-accent-underline">Kollywood QuizMaster</span>{" "}
+              <span role="img" aria-label="clapperboard">🎬</span>
+            </h1>
+            <div
               style={{
-                background: "#1A1A1A",
-                border: `2.5px solid ${mode.key === "blurred-poster" ? "#e302dc" : "#d4fe01"}`,
-                borderRadius: 17,
-                padding: 24,
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                boxShadow: `0 4px 18px 0 #00000021`,
+                color: "#d4fe01",
+                fontSize: "1.14rem",
+                fontWeight: 500,
+                marginBottom: 10,
+                textShadow: "0 0 6px #d4fe01",
               }}
             >
-              <div
+              Choose your Kollywood quiz adventure!
+            </div>
+            <div style={{ color: "#eee", opacity: 0.77, fontSize: 16 }}>
+              Each mode offers 10 movie challenges, clues, movie vibes & results!
+            </div>
+            <div className="kolly-movie-dots" aria-hidden>
+              <span className="kolly-dot" />
+              <span className="kolly-dot" />
+              <span className="kolly-dot" />
+            </div>
+          </div>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(270px, 1fr))",
+              gap: 36,
+            }}
+          >
+            {quizModes.map((mode, idx) => (
+              <section
+                key={mode.key}
+                className="kolly-mode-card"
                 style={{
-                  fontWeight: 600,
-                  fontSize: "1.2rem",
-                  color: "#e302dc",
-                  letterSpacing: 0.4,
-                  marginBottom: 12,
+                  borderColor:
+                    mode.key === "blurred-poster"
+                      ? "#e302dc"
+                      : idx % 2 === 0
+                      ? "#e302dc"
+                      : "#d4fe01",
+                  boxShadow:
+                    idx % 2 === 0
+                      ? "0 0 20px 0 #e302dc33"
+                      : "0 0 20px 0 #d4fe0122",
                 }}
               >
-                {mode.label}
-              </div>
-              <div
-                style={{
-                  fontSize: 15.5,
-                  color: "#e4e4e4",
-                  textAlign: "center",
-                  marginBottom: 18,
-                  minHeight: 54,
-                  opacity: 0.96,
-                }}
-              >
-                {mode.description}
-              </div>
-              <button
-                className="btn btn-large"
-                onClick={() => onSelectMode(mode.key)}
-              >
-                Play {mode.label}
-              </button>
-            </section>
-          ))}
-        </div>
-        <div
-          style={{
-            textAlign: "center",
-            marginTop: "48px",
-            color: "#d4fe01",
-            letterSpacing: 0.4,
-            fontSize: 18,
-          }}
-        >
-          <em>Powered by star power, movies, and vibrant Kollywood fun!</em>
+                <span className="kolly-movie-icon" aria-label="movie-icon">
+                  {mode.icon}
+                </span>
+                <div className="kolly-mode-title">{mode.label}</div>
+                <div className="kolly-mode-desc">{mode.description}</div>
+                <button
+                  className="btn btn-large"
+                  onClick={() => onSelectMode(mode.key)}
+                >
+                  Play {mode.label}
+                </button>
+                <div
+                  style={{
+                    position: 'absolute',
+                    left: 9,
+                    bottom: 15,
+                    width: 30,
+                    height: 7,
+                    borderRadius: 5,
+                    background: idx % 2 === 0 ? "#e302dc" : "#d4fe01",
+                    opacity: 0.23,
+                  }}
+                />
+              </section>
+            ))}
+          </div>
+          <div
+            style={{
+              textAlign: "center",
+              marginTop: "48px",
+              color: "#d4fe01",
+              letterSpacing: 0.4,
+              fontSize: 18,
+              fontWeight:'600',
+              textShadow: "0 0 4px #d4fe01bb",
+            }}
+          >
+            <span className="kolly-movie-strip" style={{margin: '0 auto 13px auto'}} />
+            <br />
+            <em>
+              Powered by star power,{" "}
+              <span style={{ color: "#e302dc", fontWeight: 700 }}>movies</span>, and{" "}
+              <span style={{ color: "#d4fe01", fontWeight: 700 }}>vibrant Kollywood fun!</span>
+            </em>
+          </div>
         </div>
       </div>
     );

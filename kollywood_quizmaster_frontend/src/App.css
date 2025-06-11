@@ -4,7 +4,166 @@
   --text-color: #ffffff;
   --text-secondary: rgba(255, 255, 255, 0.7);
   --border-color: rgba(255, 255, 255, 0.1);
+
+  /* Kollywood QuizMaster Theme */
+  --kolly-primary: #e302dc;
+  --kolly-secondary: #d4fe01;
+  --kolly-accent: #0e0c0c;
+  --kolly-glow: 0 0 12px #e302dc99, 0 0 28px #d4fe010f;
 }
+
+/* Kollywood Container Styles */
+.kolly-container {
+  background: linear-gradient(108deg, #0e0c0c 70%, #e302dc 100%);
+  min-height: 100vh;
+  padding-top: 120px;
+  padding-bottom: 40px;
+  font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+/* Quiz Mode Card Visual Styling */
+.kolly-mode-card {
+  background: #181616;
+  border: 2.5px solid var(--kolly-primary);
+  border-radius: 20px;
+  padding: 32px 18px 28px 18px;
+  box-shadow: 0 0 0 6px #d4fe0122, var(--kolly-glow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: visible;
+  transition: transform 0.15s, box-shadow 0.2s;
+}
+.kolly-mode-card .kolly-movie-icon {
+  font-size: 2rem;
+  color: var(--kolly-secondary);
+  text-shadow: 0 0 6px #d4fe0166, 1px 2px 0 #0e0c0c99;
+  margin-bottom: 12px;
+}
+.kolly-mode-card .kolly-mode-title {
+  color: var(--kolly-primary);
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 1.17rem;
+  margin-bottom: 12px;
+  text-shadow: 0 0 5px #e302dc44;
+}
+.kolly-mode-card .kolly-mode-desc {
+  color: #eee;
+  font-size: 1.06rem;
+  font-weight: 400;
+  text-align: center;
+  opacity: 0.93;
+  min-height: 58px;
+  margin-bottom: 18px;
+}
+.kolly-mode-card .btn {
+  background-color: var(--kolly-secondary);
+  color: var(--kolly-accent);
+  font-weight: 700;
+  box-shadow: 0 0 4px #d4fe01bb;
+  margin-top: 4px;
+}
+.kolly-mode-card:hover {
+  transform: translateY(-5px) scale(1.025);
+  box-shadow: 0 0 15px 3px #e302dc55, 0 0 0 10px #d4fe010b;
+  border-color: var(--kolly-secondary);
+  cursor: pointer;
+}
+.kolly-movie-strip {
+  width: 110px;
+  height: 16px;
+  border-radius: 8px;
+  margin-bottom: 7px;
+  background: repeating-linear-gradient(
+    90deg,
+    #d4fe01 0 10px,
+    #e302dc 10px 18px,
+    #0e0c0c 18px 28px
+  );
+  box-shadow: 0 2px 8px #0e0c0c44;
+}
+
+/* Section headers and accents */
+.kolly-section-header {
+  color: var(--kolly-primary);
+  letter-spacing: 0.04em;
+  font-weight: 800;
+  font-size: 2.1rem;
+  margin-bottom: 18px;
+  text-shadow: 0 3px 12px #e302dc44, 0 0 1px #d4fe0133;
+  text-align: center;
+}
+.kolly-highlight {
+  background: linear-gradient(90deg, #d4fe01 60%, #e302dc 100%);
+  color: #0e0c0c;
+  padding: 6px 14px;
+  border-radius: 13px;
+  font-size: 1.10rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.kolly-result-card {
+  background: rgba(225,254,1,0.11);
+  border: 2.5px solid #d4fe01;
+  border-radius: 18px;
+  color: #dacd36;
+  padding: 38px 30px;
+  max-width: 540px;
+  margin: 60px auto 0 auto;
+  box-shadow: 0 9px 25px 0 #e302dc28, 0 2px 8px #d4fe0133;
+  text-align: center;
+}
+
+.kolly-backdrop {
+  background: repeating-linear-gradient(
+    102deg, 
+    #e302dc26 0 22px,
+    #181616 22px 54px
+  );
+}
+
+/* Minor accent for underline vibes (cinematic rates) */
+.kolly-accent-underline {
+  border-bottom: 3.5px dashed #e302dc;
+  display: inline-block;
+  padding-bottom: 2px;
+  margin-bottom: 8px;
+}
+
+/* Animated movie light dots for vibe accent */
+.kolly-movie-dots {
+  display: flex;
+  gap: 3px;
+  margin: 5px auto 9px auto;
+  justify-content: center;
+}
+.kolly-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: #d4fe01;
+  box-shadow: 0 0 3px #d4fe01, 0 0 12px #e302dc44;
+  animation: blink 1.4s infinite alternate;
+}
+.kolly-dot:nth-child(2) { animation-delay: .3s }
+.kolly-dot:nth-child(3) { animation-delay: .6s }
+.kolly-dot:nth-child(4) { animation-delay: .9s }
+@keyframes blink {
+  to { opacity: 0.2; box-shadow: 0 0 2px #e302dc99; }
+}
+
+/* Container override for full width under nav */
+.kolly-fullwidth {
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  position: relative;
+  background: var(--kolly-accent);
+}
+
 
 body {
   margin: 0;
