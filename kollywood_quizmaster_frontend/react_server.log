@@ -39,3 +39,560 @@ javascript modules 41.2 KiB
     ./.ve/EditorOverlay.jsx 1.58 KiB [built]
     ./.ve/SidePanel.js 7.93 KiB [built]
 webpack 5.99.9 compiled successfully in 280 ms
+assets by path *.js 41.1 KiB
+  asset bundle.js 40.3 KiB [emitted] (name: main)
+  asset main.6878d0c2757e33b533e7.hot-update.js 854 bytes [emitted] [immutable] [hmr] (name: main)
+asset index.html 11.9 KiB [emitted]
+asset main.6878d0c2757e33b533e7.hot-update.json 2.1 KiB [emitted] [immutable] [hmr]
+Entrypoint main 41.1 KiB = bundle.js 40.3 KiB main.6878d0c2757e33b533e7.hot-update.js 854 bytes
+runtime modules 26.6 KiB 9 modules
+
+ERROR in Module not found: SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: Unexpected token / in JSON at position 443
+
+ERROR in Module not found: SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: Unexpected token / in JSON at position 443
+
+ERROR in main
+Module not found: SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: Unexpected token / in JSON at position 443
+
+ERROR in Error: Child compilation failed:
+  Module not found: SyntaxError: /home/kavia/workspace/code-generation/kollywood  -quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directo  ry description file): SyntaxError: /home/kavia/workspace/code-generation/kolly  wood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (dir  ectory description file): SyntaxError: /home/kavia/workspace/code-generation/k  ollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json   (directory description file): SyntaxError: /home/kavia/workspace/code-generati  on/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.j  son (directory description file): SyntaxError: Unexpected token / in JSON at p  osition 443
+  ModuleNotFoundError: Module not found: SyntaxError: /home/kavia/workspace/code  -generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/  package.json (directory description file): SyntaxError: /home/kavia/workspace/  code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_front  end/package.json (directory description file): SyntaxError: /home/kavia/worksp  ace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_f  rontend/package.json (directory description file): SyntaxError: /home/kavia/wo  rkspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmast  er_frontend/package.json (directory description file): SyntaxError: Unexpected   token / in JSON at position 443
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/webpack/lib/Compilation.js:2230:  28
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/webpack/lib/NormalModuleFactory.  js:933:13
+      at eval (eval at create (/home/kavia/workspace/code-generation/kollywood-q  uizmaster-38524-6a984d48/kollywood_quizmaster_frontend/node_modules/tapable/li  b/HookCodeFactory.js:33:10), <anonymous>:10:1)
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/webpack/lib/NormalModuleFactory.  js:347:22
+      at eval (eval at create (/home/kavia/workspace/code-generation/kollywood-q  uizmaster-38524-6a984d48/kollywood_quizmaster_frontend/node_modules/tapable/li  b/HookCodeFactory.js:33:10), <anonymous>:9:1)
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/webpack/lib/NormalModuleFactory.  js:530:22
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/webpack/lib/NormalModuleFactory.  js:167:10
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/webpack/lib/NormalModuleFactory.  js:756:23
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/neo-async/async.js:2830:7
+      at done (/home/kavia/workspace/code-generation/kollywood-quizmaster-38524-  6a984d48/kollywood_quizmaster_frontend/node_modules/neo-async/async.js:2925:13  )
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/webpack/lib/NormalModuleFactory.  js:1202:23
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/Resolver.js  :620:22
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/Resolver.js  :716:21
+      at eval (eval at create (/home/kavia/workspace/code-generation/kollywood-q  uizmaster-38524-6a984d48/kollywood_quizmaster_frontend/node_modules/tapable/li  b/HookCodeFactory.js:33:10), <anonymous>:24:1)
+      at done (/home/kavia/workspace/code-generation/kollywood-quizmaster-38524-  6a984d48/kollywood_quizmaster_frontend/node_modules/webpack/lib/cache/Resolver  CachePlugin.js:369:13)
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/webpack/lib/cache/ResolverCacheP  lugin.js:204:22
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/Resolver.js  :716:21
+      at eval (eval at create (/home/kavia/workspace/code-generation/kollywood-q  uizmaster-38524-6a984d48/kollywood_quizmaster_frontend/node_modules/tapable/li  b/HookCodeFactory.js:33:10), <anonymous>:10:1)
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/Resolver.js  :716:21
+      at eval (eval at create (/home/kavia/workspace/code-generation/kollywood-q  uizmaster-38524-6a984d48/kollywood_quizmaster_frontend/node_modules/tapable/li  b/HookCodeFactory.js:33:10), <anonymous>:24:1)
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/Description  FilePlugin.js:58:24
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/Description  FileUtils.js:146:21
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/forEachBail  .js:39:13
+      at onJson (/home/kavia/workspace/code-generation/kollywood-quizmaster-3852  4-6a984d48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/Des  criptionFileUtils.js:131:14)
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/Description  FileUtils.js:81:15
+      at runCallbacks (/home/kavia/workspace/code-generation/kollywood-quizmaste  r-38524-6a984d48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/l  ib/CachedInputFileSystem.js:52:4)
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/CachedInput  FileSystem.js:279:5
+      at Array.<anonymous> (/home/kavia/workspace/code-generation/kollywood-quiz  master-38524-6a984d48/kollywood_quizmaster_frontend/node_modules/enhanced-reso  lve/lib/CachedInputFileSystem.js:596:17)
+      at runCallbacks (/home/kavia/workspace/code-generation/kollywood-quizmaste  r-38524-6a984d48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/l  ib/CachedInputFileSystem.js:45:15)
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/CachedInput  FileSystem.js:279:5
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/graceful-fs/graceful-fs.js:123:1  6
+      at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read  _file_context:68:3)
+  
+  - Compilation.js:2230 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compilation.js:2230:28
+  
+  - NormalModuleFactory.js:933 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/NormalModuleFactory.js:933:13
+  
+  
+  - NormalModuleFactory.js:347 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/NormalModuleFactory.js:347:22
+  
+  
+  - NormalModuleFactory.js:530 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/NormalModuleFactory.js:530:22
+  
+  - NormalModuleFactory.js:167 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/NormalModuleFactory.js:167:10
+  
+  - NormalModuleFactory.js:756 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/NormalModuleFactory.js:756:23
+  
+  - async.js:2830 
+    [kollywood_quizmaster_frontend]/[neo-async]/async.js:2830:7
+  
+  - async.js:2925 done
+    [kollywood_quizmaster_frontend]/[neo-async]/async.js:2925:13
+  
+  - NormalModuleFactory.js:1202 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/NormalModuleFactory.js:1202:23  
+  - Resolver.js:620 
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/Resolver.js:620:22
+  
+  - Resolver.js:716 
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/Resolver.js:716:21
+  
+  
+  - ResolverCachePlugin.js:369 done
+    [kollywood_quizmaster_frontend]/[webpack]/lib/cache/ResolverCachePlugin.js:3    69:13
+  
+  - ResolverCachePlugin.js:204 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/cache/ResolverCachePlugin.js:2    04:22
+  
+  - Resolver.js:716 
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/Resolver.js:716:21
+  
+  
+  - Resolver.js:716 
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/Resolver.js:716:21
+  
+  
+  - DescriptionFilePlugin.js:58 
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/DescriptionFilePlugin    .js:58:24
+  
+  - DescriptionFileUtils.js:146 
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/DescriptionFileUtils.    js:146:21
+  
+  - forEachBail.js:39 
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/forEachBail.js:39:13
+  
+  - DescriptionFileUtils.js:131 onJson
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/DescriptionFileUtils.    js:131:14
+  
+  - DescriptionFileUtils.js:81 
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/DescriptionFileUtils.    js:81:15
+  
+  - CachedInputFileSystem.js:52 runCallbacks
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/CachedInputFileSystem    .js:52:4
+  
+  - CachedInputFileSystem.js:279 
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/CachedInputFileSystem    .js:279:5
+  
+  - CachedInputFileSystem.js:596 Array.<anonymous>
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/CachedInputFileSystem    .js:596:17
+  
+  - CachedInputFileSystem.js:45 runCallbacks
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/CachedInputFileSystem    .js:45:15
+  
+  - CachedInputFileSystem.js:279 
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/CachedInputFileSystem    .js:279:5
+  
+  - graceful-fs.js:123 
+    [kollywood_quizmaster_frontend]/[graceful-fs]/graceful-fs.js:123:16
+  
+  - read_file_context:68 FSReqCallback.readFileAfterClose [as oncomplete]
+    node:internal/fs/read_file_context:68:3
+  
+  - child-compiler.js:211 
+    [kollywood_quizmaster_frontend]/[html-webpack-plugin]/lib/child-compiler.js:    211:18
+  
+  - Compiler.js:625 finalCallback
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compiler.js:625:5
+  
+  - Compiler.js:661 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compiler.js:661:11
+  
+  - Compiler.js:1347 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compiler.js:1347:17
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [kollywood_quizmaster_frontend]/[tapable]/lib/Hook.js:18:14
+  
+  - Compiler.js:1343 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compiler.js:1343:33
+  
+  - Compilation.js:3061 finalCallback
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compilation.js:3061:11
+  
+  - Compilation.js:3404 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compilation.js:3404:11
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [kollywood_quizmaster_frontend]/[tapable]/lib/Hook.js:18:14
+  
+  - Compilation.js:3397 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compilation.js:3397:38
+  
+  
+  - Compilation.js:562 fn
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compilation.js:562:9
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [kollywood_quizmaster_frontend]/[tapable]/lib/Hook.js:18:14
+  
+  - Compilation.js:3361 cont
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compilation.js:3361:34
+  
+  - Compilation.js:3417 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compilation.js:3417:10
+  
+  - async.js:3485 symbolIterator
+    [kollywood_quizmaster_frontend]/[neo-async]/async.js:3485:9
+
+1 ERROR in child compilations (Use 'stats.children: true' resp. '--stats-children' for more details)
+webpack 5.99.9 compiled with 5 errors in 253 ms
+assets by path *.js 41.1 KiB
+  asset bundle.js 40.3 KiB [emitted] (name: main)
+  asset main.d64da57f90b6a72f11fe.hot-update.js 854 bytes [emitted] [immutable] [hmr] (name: main)
+asset index.html 11.9 KiB [emitted]
+asset main.d64da57f90b6a72f11fe.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 41.1 KiB = bundle.js 40.3 KiB main.d64da57f90b6a72f11fe.hot-update.js 854 bytes
+runtime modules 26.6 KiB 9 modules
+
+ERROR in Module not found: SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: Unexpected string in JSON at position 442
+
+ERROR in Module not found: SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: Unexpected string in JSON at position 442
+
+ERROR in main
+Module not found: SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: Unexpected string in JSON at position 442
+
+ERROR in Error: Child compilation failed:
+  Module not found: SyntaxError: /home/kavia/workspace/code-generation/kollywood  -quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directo  ry description file): SyntaxError: /home/kavia/workspace/code-generation/kolly  wood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (dir  ectory description file): SyntaxError: /home/kavia/workspace/code-generation/k  ollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json   (directory description file): SyntaxError: /home/kavia/workspace/code-generati  on/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.j  son (directory description file): SyntaxError: Unexpected string in JSON at po  sition 442
+  ModuleNotFoundError: Module not found: SyntaxError: /home/kavia/workspace/code  -generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/  package.json (directory description file): SyntaxError: /home/kavia/workspace/  code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_front  end/package.json (directory description file): SyntaxError: /home/kavia/worksp  ace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_f  rontend/package.json (directory description file): SyntaxError: /home/kavia/wo  rkspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmast  er_frontend/package.json (directory description file): SyntaxError: Unexpected   string in JSON at position 442
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/webpack/lib/Compilation.js:2230:  28
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/webpack/lib/NormalModuleFactory.  js:933:13
+      at eval (eval at create (/home/kavia/workspace/code-generation/kollywood-q  uizmaster-38524-6a984d48/kollywood_quizmaster_frontend/node_modules/tapable/li  b/HookCodeFactory.js:33:10), <anonymous>:10:1)
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/webpack/lib/NormalModuleFactory.  js:347:22
+      at eval (eval at create (/home/kavia/workspace/code-generation/kollywood-q  uizmaster-38524-6a984d48/kollywood_quizmaster_frontend/node_modules/tapable/li  b/HookCodeFactory.js:33:10), <anonymous>:9:1)
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/webpack/lib/NormalModuleFactory.  js:530:22
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/webpack/lib/NormalModuleFactory.  js:167:10
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/webpack/lib/NormalModuleFactory.  js:756:23
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/neo-async/async.js:2830:7
+      at done (/home/kavia/workspace/code-generation/kollywood-quizmaster-38524-  6a984d48/kollywood_quizmaster_frontend/node_modules/neo-async/async.js:2925:13  )
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/webpack/lib/NormalModuleFactory.  js:1202:23
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/Resolver.js  :620:22
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/Resolver.js  :716:21
+      at eval (eval at create (/home/kavia/workspace/code-generation/kollywood-q  uizmaster-38524-6a984d48/kollywood_quizmaster_frontend/node_modules/tapable/li  b/HookCodeFactory.js:33:10), <anonymous>:24:1)
+      at done (/home/kavia/workspace/code-generation/kollywood-quizmaster-38524-  6a984d48/kollywood_quizmaster_frontend/node_modules/webpack/lib/cache/Resolver  CachePlugin.js:369:13)
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/webpack/lib/cache/ResolverCacheP  lugin.js:204:22
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/Resolver.js  :716:21
+      at eval (eval at create (/home/kavia/workspace/code-generation/kollywood-q  uizmaster-38524-6a984d48/kollywood_quizmaster_frontend/node_modules/tapable/li  b/HookCodeFactory.js:33:10), <anonymous>:10:1)
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/Resolver.js  :716:21
+      at eval (eval at create (/home/kavia/workspace/code-generation/kollywood-q  uizmaster-38524-6a984d48/kollywood_quizmaster_frontend/node_modules/tapable/li  b/HookCodeFactory.js:33:10), <anonymous>:24:1)
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/Description  FilePlugin.js:58:24
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/Description  FileUtils.js:146:21
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/forEachBail  .js:39:13
+      at onJson (/home/kavia/workspace/code-generation/kollywood-quizmaster-3852  4-6a984d48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/Des  criptionFileUtils.js:131:14)
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/Description  FileUtils.js:81:15
+      at runCallbacks (/home/kavia/workspace/code-generation/kollywood-quizmaste  r-38524-6a984d48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/l  ib/CachedInputFileSystem.js:52:4)
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/CachedInput  FileSystem.js:279:5
+      at Array.<anonymous> (/home/kavia/workspace/code-generation/kollywood-quiz  master-38524-6a984d48/kollywood_quizmaster_frontend/node_modules/enhanced-reso  lve/lib/CachedInputFileSystem.js:596:17)
+      at runCallbacks (/home/kavia/workspace/code-generation/kollywood-quizmaste  r-38524-6a984d48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/l  ib/CachedInputFileSystem.js:45:15)
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/CachedInput  FileSystem.js:279:5
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/graceful-fs/graceful-fs.js:123:1  6
+      at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read  _file_context:68:3)
+  
+  - Compilation.js:2230 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compilation.js:2230:28
+  
+  - NormalModuleFactory.js:933 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/NormalModuleFactory.js:933:13
+  
+  
+  - NormalModuleFactory.js:347 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/NormalModuleFactory.js:347:22
+  
+  
+  - NormalModuleFactory.js:530 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/NormalModuleFactory.js:530:22
+  
+  - NormalModuleFactory.js:167 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/NormalModuleFactory.js:167:10
+  
+  - NormalModuleFactory.js:756 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/NormalModuleFactory.js:756:23
+  
+  - async.js:2830 
+    [kollywood_quizmaster_frontend]/[neo-async]/async.js:2830:7
+  
+  - async.js:2925 done
+    [kollywood_quizmaster_frontend]/[neo-async]/async.js:2925:13
+  
+  - NormalModuleFactory.js:1202 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/NormalModuleFactory.js:1202:23  
+  - Resolver.js:620 
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/Resolver.js:620:22
+  
+  - Resolver.js:716 
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/Resolver.js:716:21
+  
+  
+  - ResolverCachePlugin.js:369 done
+    [kollywood_quizmaster_frontend]/[webpack]/lib/cache/ResolverCachePlugin.js:3    69:13
+  
+  - ResolverCachePlugin.js:204 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/cache/ResolverCachePlugin.js:2    04:22
+  
+  - Resolver.js:716 
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/Resolver.js:716:21
+  
+  
+  - Resolver.js:716 
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/Resolver.js:716:21
+  
+  
+  - DescriptionFilePlugin.js:58 
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/DescriptionFilePlugin    .js:58:24
+  
+  - DescriptionFileUtils.js:146 
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/DescriptionFileUtils.    js:146:21
+  
+  - forEachBail.js:39 
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/forEachBail.js:39:13
+  
+  - DescriptionFileUtils.js:131 onJson
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/DescriptionFileUtils.    js:131:14
+  
+  - DescriptionFileUtils.js:81 
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/DescriptionFileUtils.    js:81:15
+  
+  - CachedInputFileSystem.js:52 runCallbacks
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/CachedInputFileSystem    .js:52:4
+  
+  - CachedInputFileSystem.js:279 
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/CachedInputFileSystem    .js:279:5
+  
+  - CachedInputFileSystem.js:596 Array.<anonymous>
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/CachedInputFileSystem    .js:596:17
+  
+  - CachedInputFileSystem.js:45 runCallbacks
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/CachedInputFileSystem    .js:45:15
+  
+  - CachedInputFileSystem.js:279 
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/CachedInputFileSystem    .js:279:5
+  
+  - graceful-fs.js:123 
+    [kollywood_quizmaster_frontend]/[graceful-fs]/graceful-fs.js:123:16
+  
+  - read_file_context:68 FSReqCallback.readFileAfterClose [as oncomplete]
+    node:internal/fs/read_file_context:68:3
+  
+  - child-compiler.js:211 
+    [kollywood_quizmaster_frontend]/[html-webpack-plugin]/lib/child-compiler.js:    211:18
+  
+  - Compiler.js:625 finalCallback
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compiler.js:625:5
+  
+  - Compiler.js:661 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compiler.js:661:11
+  
+  - Compiler.js:1347 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compiler.js:1347:17
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [kollywood_quizmaster_frontend]/[tapable]/lib/Hook.js:18:14
+  
+  - Compiler.js:1343 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compiler.js:1343:33
+  
+  - Compilation.js:3061 finalCallback
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compilation.js:3061:11
+  
+  - Compilation.js:3404 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compilation.js:3404:11
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [kollywood_quizmaster_frontend]/[tapable]/lib/Hook.js:18:14
+  
+  - Compilation.js:3397 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compilation.js:3397:38
+  
+  
+  - Compilation.js:562 fn
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compilation.js:562:9
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [kollywood_quizmaster_frontend]/[tapable]/lib/Hook.js:18:14
+  
+  - Compilation.js:3361 cont
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compilation.js:3361:34
+  
+  - Compilation.js:3417 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compilation.js:3417:10
+  
+  - async.js:3485 symbolIterator
+    [kollywood_quizmaster_frontend]/[neo-async]/async.js:3485:9
+
+1 ERROR in child compilations (Use 'stats.children: true' resp. '--stats-children' for more details)
+webpack 5.99.9 compiled with 5 errors in 101 ms
+assets by status 40.3 KiB [cached] 1 asset
+asset index.html 11.9 KiB [emitted]
+cached modules 26.6 KiB [cached] 9 modules
+
+ERROR in Module not found: SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: Unexpected string in JSON at position 442
+
+ERROR in Module not found: SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: Unexpected string in JSON at position 442
+
+ERROR in main
+Module not found: SyntaxError: /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directory description file): SyntaxError: Unexpected string in JSON at position 442
+
+ERROR in Error: Child compilation failed:
+  Module not found: SyntaxError: /home/kavia/workspace/code-generation/kollywood  -quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (directo  ry description file): SyntaxError: /home/kavia/workspace/code-generation/kolly  wood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json (dir  ectory description file): SyntaxError: /home/kavia/workspace/code-generation/k  ollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.json   (directory description file): SyntaxError: /home/kavia/workspace/code-generati  on/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/package.j  son (directory description file): SyntaxError: Unexpected string in JSON at po  sition 442
+  ModuleNotFoundError: Module not found: SyntaxError: /home/kavia/workspace/code  -generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_frontend/  package.json (directory description file): SyntaxError: /home/kavia/workspace/  code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_front  end/package.json (directory description file): SyntaxError: /home/kavia/worksp  ace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmaster_f  rontend/package.json (directory description file): SyntaxError: /home/kavia/wo  rkspace/code-generation/kollywood-quizmaster-38524-6a984d48/kollywood_quizmast  er_frontend/package.json (directory description file): SyntaxError: Unexpected   string in JSON at position 442
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/webpack/lib/Compilation.js:2230:  28
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/webpack/lib/NormalModuleFactory.  js:933:13
+      at eval (eval at create (/home/kavia/workspace/code-generation/kollywood-q  uizmaster-38524-6a984d48/kollywood_quizmaster_frontend/node_modules/tapable/li  b/HookCodeFactory.js:33:10), <anonymous>:10:1)
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/webpack/lib/NormalModuleFactory.  js:347:22
+      at eval (eval at create (/home/kavia/workspace/code-generation/kollywood-q  uizmaster-38524-6a984d48/kollywood_quizmaster_frontend/node_modules/tapable/li  b/HookCodeFactory.js:33:10), <anonymous>:9:1)
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/webpack/lib/NormalModuleFactory.  js:530:22
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/webpack/lib/NormalModuleFactory.  js:167:10
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/webpack/lib/NormalModuleFactory.  js:756:23
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/neo-async/async.js:2830:7
+      at done (/home/kavia/workspace/code-generation/kollywood-quizmaster-38524-  6a984d48/kollywood_quizmaster_frontend/node_modules/neo-async/async.js:2925:13  )
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/webpack/lib/NormalModuleFactory.  js:1202:23
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/Resolver.js  :620:22
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/Resolver.js  :716:21
+      at eval (eval at create (/home/kavia/workspace/code-generation/kollywood-q  uizmaster-38524-6a984d48/kollywood_quizmaster_frontend/node_modules/tapable/li  b/HookCodeFactory.js:33:10), <anonymous>:24:1)
+      at done (/home/kavia/workspace/code-generation/kollywood-quizmaster-38524-  6a984d48/kollywood_quizmaster_frontend/node_modules/webpack/lib/cache/Resolver  CachePlugin.js:369:13)
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/webpack/lib/cache/ResolverCacheP  lugin.js:204:22
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/Resolver.js  :716:21
+      at eval (eval at create (/home/kavia/workspace/code-generation/kollywood-q  uizmaster-38524-6a984d48/kollywood_quizmaster_frontend/node_modules/tapable/li  b/HookCodeFactory.js:33:10), <anonymous>:10:1)
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/Resolver.js  :716:21
+      at eval (eval at create (/home/kavia/workspace/code-generation/kollywood-q  uizmaster-38524-6a984d48/kollywood_quizmaster_frontend/node_modules/tapable/li  b/HookCodeFactory.js:33:10), <anonymous>:24:1)
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/Description  FilePlugin.js:58:24
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/Description  FileUtils.js:146:21
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/forEachBail  .js:39:13
+      at onJson (/home/kavia/workspace/code-generation/kollywood-quizmaster-3852  4-6a984d48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/Des  criptionFileUtils.js:131:14)
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/Description  FileUtils.js:81:15
+      at runCallbacks (/home/kavia/workspace/code-generation/kollywood-quizmaste  r-38524-6a984d48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/l  ib/CachedInputFileSystem.js:52:4)
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/CachedInput  FileSystem.js:279:5
+      at Array.<anonymous> (/home/kavia/workspace/code-generation/kollywood-quiz  master-38524-6a984d48/kollywood_quizmaster_frontend/node_modules/enhanced-reso  lve/lib/CachedInputFileSystem.js:596:17)
+      at runCallbacks (/home/kavia/workspace/code-generation/kollywood-quizmaste  r-38524-6a984d48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/l  ib/CachedInputFileSystem.js:45:15)
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/enhanced-resolve/lib/CachedInput  FileSystem.js:279:5
+      at /home/kavia/workspace/code-generation/kollywood-quizmaster-38524-6a984d  48/kollywood_quizmaster_frontend/node_modules/graceful-fs/graceful-fs.js:123:1  6
+      at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read  _file_context:68:3)
+  
+  - Compilation.js:2230 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compilation.js:2230:28
+  
+  - NormalModuleFactory.js:933 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/NormalModuleFactory.js:933:13
+  
+  
+  - NormalModuleFactory.js:347 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/NormalModuleFactory.js:347:22
+  
+  
+  - NormalModuleFactory.js:530 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/NormalModuleFactory.js:530:22
+  
+  - NormalModuleFactory.js:167 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/NormalModuleFactory.js:167:10
+  
+  - NormalModuleFactory.js:756 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/NormalModuleFactory.js:756:23
+  
+  - async.js:2830 
+    [kollywood_quizmaster_frontend]/[neo-async]/async.js:2830:7
+  
+  - async.js:2925 done
+    [kollywood_quizmaster_frontend]/[neo-async]/async.js:2925:13
+  
+  - NormalModuleFactory.js:1202 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/NormalModuleFactory.js:1202:23  
+  - Resolver.js:620 
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/Resolver.js:620:22
+  
+  - Resolver.js:716 
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/Resolver.js:716:21
+  
+  
+  - ResolverCachePlugin.js:369 done
+    [kollywood_quizmaster_frontend]/[webpack]/lib/cache/ResolverCachePlugin.js:3    69:13
+  
+  - ResolverCachePlugin.js:204 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/cache/ResolverCachePlugin.js:2    04:22
+  
+  - Resolver.js:716 
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/Resolver.js:716:21
+  
+  
+  - Resolver.js:716 
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/Resolver.js:716:21
+  
+  
+  - DescriptionFilePlugin.js:58 
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/DescriptionFilePlugin    .js:58:24
+  
+  - DescriptionFileUtils.js:146 
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/DescriptionFileUtils.    js:146:21
+  
+  - forEachBail.js:39 
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/forEachBail.js:39:13
+  
+  - DescriptionFileUtils.js:131 onJson
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/DescriptionFileUtils.    js:131:14
+  
+  - DescriptionFileUtils.js:81 
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/DescriptionFileUtils.    js:81:15
+  
+  - CachedInputFileSystem.js:52 runCallbacks
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/CachedInputFileSystem    .js:52:4
+  
+  - CachedInputFileSystem.js:279 
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/CachedInputFileSystem    .js:279:5
+  
+  - CachedInputFileSystem.js:596 Array.<anonymous>
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/CachedInputFileSystem    .js:596:17
+  
+  - CachedInputFileSystem.js:45 runCallbacks
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/CachedInputFileSystem    .js:45:15
+  
+  - CachedInputFileSystem.js:279 
+    [kollywood_quizmaster_frontend]/[enhanced-resolve]/lib/CachedInputFileSystem    .js:279:5
+  
+  - graceful-fs.js:123 
+    [kollywood_quizmaster_frontend]/[graceful-fs]/graceful-fs.js:123:16
+  
+  - read_file_context:68 FSReqCallback.readFileAfterClose [as oncomplete]
+    node:internal/fs/read_file_context:68:3
+  
+  - child-compiler.js:211 
+    [kollywood_quizmaster_frontend]/[html-webpack-plugin]/lib/child-compiler.js:    211:18
+  
+  - Compiler.js:625 finalCallback
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compiler.js:625:5
+  
+  - Compiler.js:661 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compiler.js:661:11
+  
+  - Compiler.js:1347 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compiler.js:1347:17
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [kollywood_quizmaster_frontend]/[tapable]/lib/Hook.js:18:14
+  
+  - Compiler.js:1343 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compiler.js:1343:33
+  
+  - Compilation.js:3061 finalCallback
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compilation.js:3061:11
+  
+  - Compilation.js:3404 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compilation.js:3404:11
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [kollywood_quizmaster_frontend]/[tapable]/lib/Hook.js:18:14
+  
+  - Compilation.js:3397 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compilation.js:3397:38
+  
+  
+  - Compilation.js:562 fn
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compilation.js:562:9
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [kollywood_quizmaster_frontend]/[tapable]/lib/Hook.js:18:14
+  
+  - Compilation.js:3361 cont
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compilation.js:3361:34
+  
+  - Compilation.js:3417 
+    [kollywood_quizmaster_frontend]/[webpack]/lib/Compilation.js:3417:10
+  
+  - async.js:3485 symbolIterator
+    [kollywood_quizmaster_frontend]/[neo-async]/async.js:3485:9
+
+1 ERROR in child compilations (Use 'stats.children: true' resp. '--stats-children' for more details)
+webpack 5.99.9 compiled with 5 errors in 148 ms
