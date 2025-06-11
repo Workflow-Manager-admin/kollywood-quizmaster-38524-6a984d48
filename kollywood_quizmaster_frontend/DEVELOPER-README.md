@@ -1,12 +1,39 @@
 # Notes for Resolving 'Invalid Host header' Error in React Dev Server
 
-If you encounter the "Invalid Host header" error when running the React dev server (including for remote/cloud/devcontainer/VSCode online/WSL), follow these steps based on your setup:
+If you encounter the "Invalid Host header" error when running the React dev server (especially in remote/cloud/devcontainer/VSCode online/WSL environments), use the steps below. **This project uses a custom Webpack config and dev script; see details for your scenario.**
 
 ---
 
-## 1. Plain Create React App (react-scripts, NOT ejected)
+## Project-specific Solution (KAVIA Template/Custom Webpack)
 
-- Add to your `.env` (in your project folder, e.g. `kollywood_quizmaster_frontend/.env`):
+- This project does **NOT** use Create React App's ejected setup, nor craco, nor react-app-rewired.
+- Instead, it uses a custom Webpack config `.ve/webpack.config.js` and runs dev server with the following start script (see `package.json`):
+
+  ```
+  "start": "cross-env EDIT_MODE=true webpack serve --config .ve/webpack.config.js --mode development --disable-host-check --host 0.0.0.0"
+  ```
+
+- **This already includes both:**
+  - `--disable-host-check`
+  - `--host 0.0.0.0`
+- This disables host header checks and allows access from any network (including port forwarding, containers, or cloud IDEs).
+- In almost all deployment/test environments, this script alone is sufficient to solve the "Invalid Host header" error.
+
+---
+
+## What if you *still* see the error?
+
+### Step 1: Verify you're using the correct start command
+
+- Always start the dev server using:
+
+  ```
+  npm start
+  ```
+
+### Step 2: Try a .env file
+
+- If you experience issues (or the script changes), try adding this `.env` file in `kollywood_quizmaster_frontend/`:
 
   ```
   HOST=0.0.0.0
@@ -14,55 +41,30 @@ If you encounter the "Invalid Host header" error when running the React dev serv
   FAST_REFRESH=false
   ```
 
-- If this doesn't work, use [`craco`](https://github.com/dilanx/craco) or [`react-app-rewired`](https://github.com/timarney/react-app-rewired) to override webpack dev server config:
-  - Install: `npm install @craco/craco` or `npm install react-app-rewired`
-  - Add `craco.config.js` or `config-overrides.js`:
-    ```js
-    // With craco.config.js or config-overrides.js:
-    module.exports = {
-      devServer: {
-        allowedHosts: 'all'
-      }
-    };
-    ```
+### Step 3: (Advanced) Customizing Webpack
 
----
-
-## 2. Ejected Create React App
-
-- Edit `webpackDevServer.config.js` and **set**:
-  ```js
-  allowedHosts: 'all',
-  ```
-  ...in the exported `devServer` config object.
-
----
-
-## 3. Custom Webpack or Template Config
-
-- If you are using your own webpack config (`webpack.config.js`, etc.), ensure the dev server section includes:
+- If you fork or restructure the project and customize Webpack config, ensure `devServer` includes:
   ```js
   devServer: {
-    allowedHosts: 'all'
+    allowedHosts: 'all',
+    host: '0.0.0.0',
+    disableHostCheck: true,
   }
   ```
+  *(Note: `disableHostCheck` is deprecated, but included here for backwards compatibility where necessary.)*
 
 ---
 
-## 4. This KAVIA Template (Custom 'start' Script)
+## NOT USED in this Project
 
-- The existing `package.json` "start" script already includes:
-  ```
-  --disable-host-check --host 0.0.0.0
-  ```
-- This should resolve the error for most remote/VM/port-forwarded scenarios.
-- If not, see steps above for `.env` or config changes.
+- You do **NOT** need to use `react-app-rewired`, `craco`, or eject/apply `webpackDevServer.config.js` fixes. 
+- There is no `config-overrides.js` or `craco.config.js` in this repo.
 
 ---
 
-## 5. Proxy Use
+## Proxy Use
 
-- If you use the `proxy` field in `package.json`, make sure it is a valid URL, and matches the backend/server.
+- If using the `proxy` field in `package.json`, verify the value is a valid backend URL and matches your API server.
 
 ---
 
@@ -71,5 +73,10 @@ If you encounter the "Invalid Host header" error when running the React dev serv
 - [CRA docs: Invalid Host header](https://github.com/facebook/create-react-app/issues/11230)
 - [Webpack Dev Server allowedHosts Option](https://webpack.js.org/configuration/dev-server/#devserverallowedhosts)
 
-**Summary:**  
-- `.env` values, proper config, and correct dev server flags will resolve the Invalid Host header issue in all environments.
+---
+
+**Summary for THIS REPO:**  
+- Use `npm start` (with the dev script provided).
+- If still blocked, try the `.env` file.
+- No need (or benefit) to apply CRA, craco, or react-app-rewired workarounds.
+- See this file if you change/upgrade dev tooling!

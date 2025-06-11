@@ -596,3 +596,22 @@ ERROR in Error: Child compilation failed:
 
 1 ERROR in child compilations (Use 'stats.children: true' resp. '--stats-children' for more details)
 webpack 5.99.9 compiled with 5 errors in 148 ms
+Injecting EditorRootWrapper import: ../.ve/EditorRootWrapper
+assets by path *.js 2.82 MiB
+  asset bundle.js 1.43 MiB [emitted] (name: main)
+  asset main.e6020f069b968e0a83fb.hot-update.js 1.39 MiB [emitted] [immutable] [hmr] (name: main)
+asset index.html 1.92 KiB [emitted]
+asset main.e6020f069b968e0a83fb.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 2.82 MiB = bundle.js 1.43 MiB main.e6020f069b968e0a83fb.hot-update.js 1.39 MiB
+cached modules 1.25 MiB [cached] 37 modules
+runtime modules 27.5 KiB 14 modules
+javascript modules 41.2 KiB
+  modules by path ./src/*.js 29 KiB
+    ./src/index.js 530 bytes [built]
+    ./src/App.js 1.69 KiB [built]
+    ./src/KollywoodQuizMasterContainer.js 26.8 KiB [built]
+  modules by path ./.ve/ 12.2 KiB
+    ./.ve/EditorRootWrapper.js 2.68 KiB [built]
+    ./.ve/EditorOverlay.jsx 1.58 KiB [built]
+    ./.ve/SidePanel.js 7.93 KiB [built]
+webpack 5.99.9 compiled successfully in 273 ms
