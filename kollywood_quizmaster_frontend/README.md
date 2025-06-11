@@ -24,6 +24,12 @@ PUBLIC_URL=.
 ```
 - `PUBLIC_URL=.` is important for production builds with `react-scripts build` to prevent `ReferenceError: PUBLIC_URL is not defined` errors.
 
+> **Troubleshooting note:**  
+> If your build still fails with `ReferenceError: PUBLIC_URL is not defined`, ensure your `.env` file is present in the `kollywood_quizmaster_frontend/` directory and that the variable is defined before any custom Webpack or non-standard scripts. If using custom build tools, ensure environment variables are loaded before running the build. If issues persist, check for references to `PUBLIC_URL` in `public/index.html` or custom files and consider manually defining the environment variable when running the build command:
+> ```
+> PUBLIC_URL=. npm run build
+> ```
+
 1. Use `npm start` as above for development.
 2. If you still get this error, or if a production build fails, create `.env` with those settings in `kollywood_quizmaster_frontend/`.
 3. See `DEVELOPER-README.md` for detailed explanation—typically, NO extra configuration or ejection is required.

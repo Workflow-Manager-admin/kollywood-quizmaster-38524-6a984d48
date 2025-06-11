@@ -1,5 +1,23 @@
 # Notes for Resolving 'Invalid Host header' Error in React Dev Server
 
+> **[2024 Update: Configuration & Troubleshooting Performed]**
+>
+> - No Create React App (CRA) or ejected CRA config detected. No `craco` or `react-app-rewired` present. No config-overrides.js or craco.config.js.
+> - Custom Webpack config is used: `.ve/webpack.config.js`.
+> - `npm start` script forcibly uses:  
+>   - `webpack serve --config .ve/webpack.config.js --mode development --disable-host-check --host 0.0.0.0`
+> - This is equivalent to allowing all hosts and disabling host checks (`allowedHosts: 'all'` equivalent).
+> - Flags:  
+>   - `--disable-host-check` (bypasses host checking)  
+>   - `--host 0.0.0.0` (listens on all interfaces)  
+> - These settings should avoid "Invalid Host header" errors in almost all dev/container/cloud/network setups.
+> - For further troubleshooting, a `.env` file with variables (`HOST=0.0.0.0`, `DANGEROUSLY_DISABLE_HOST_CHECK=true`, `FAST_REFRESH=false`) is recommended as a backup—see below for template.
+>
+> **No changes to CRA, react-scripts, craco, react-app-rewired, or ejected configs are needed or applicable. All config is handled via webpack CLI and `.env` as fallback.**
+>
+> ---
+
+
 If you encounter the "Invalid Host header" error when running the React dev server (especially in remote/cloud/devcontainer/VSCode online/WSL environments), use the steps below. **This project uses a custom Webpack config and dev script; see details for your scenario.**
 
 ---
