@@ -2,6 +2,34 @@
 
 This project provides a minimal React template with a clean, modern UI and minimal dependencies.
 
+---
+
+## Developer Note: Solving "Invalid Host header" in Development
+
+**Does your dev server refuse connections from remote or cloud environments? Do you see "Invalid Host header"?**
+- This project does NOT use Create React App's built-in dev server, nor does it use craco/react-app-rewired. Instead, it uses a custom Webpack config with a start script in `package.json`:
+
+  ```
+  "start": "cross-env EDIT_MODE=true webpack serve --config .ve/webpack.config.js --mode development --disable-host-check --host 0.0.0.0"
+  ```
+
+  This script already includes the necessary flags to disable host checks.
+
+**Recommended .env for stubborn dev/build environments:**  
+```
+HOST=0.0.0.0
+DANGEROUSLY_DISABLE_HOST_CHECK=true
+FAST_REFRESH=false
+PUBLIC_URL=.
+```
+- `PUBLIC_URL=.` is important for production builds with `react-scripts build` to prevent `ReferenceError: PUBLIC_URL is not defined` errors.
+
+1. Use `npm start` as above for development.
+2. If you still get this error, or if a production build fails, create `.env` with those settings in `kollywood_quizmaster_frontend/`.
+3. See `DEVELOPER-README.md` for detailed explanation—typically, NO extra configuration or ejection is required.
+
+---
+
 ## Features
 
 - **Lightweight**: No heavy UI frameworks - uses only vanilla CSS and React

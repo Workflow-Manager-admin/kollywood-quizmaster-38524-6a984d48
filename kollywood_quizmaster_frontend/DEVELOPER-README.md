@@ -4,6 +4,49 @@ If you encounter the "Invalid Host header" error when running the React dev serv
 
 ---
 
+## Quick Solution for "Invalid Host header"
+
+- This project uses a fully custom Webpack config (not CRA, not craco, not react-app-rewired, not ejected CRA).
+- The start script in `package.json`:
+  ```
+  "start": "cross-env EDIT_MODE=true webpack serve --config .ve/webpack.config.js --mode development --disable-host-check --host 0.0.0.0"
+  ```
+  already sets:
+    - `--disable-host-check`
+    - `--host 0.0.0.0`
+  These options allow connections from any host (i.e., **no Invalid Host header error** in most scenarios).
+
+## Recommended Development .env for Troubleshooting
+
+If you still encounter the error (or need to override start flags), create a `.env` file in the `kollywood_quizmaster_frontend/` directory with:
+```
+HOST=0.0.0.0
+DANGEROUSLY_DISABLE_HOST_CHECK=true
+FAST_REFRESH=false
+PUBLIC_URL=.
+```
+- `HOST=0.0.0.0` lets the server listen on all interfaces (required for WSL, containers, and VSCode online).
+- `DANGEROUSLY_DISABLE_HOST_CHECK=true` turns off host checks at the app level (for environments that ignore CLI flags).
+- `FAST_REFRESH=false` disables modern hot reload for maximum compatibility (some edge remote environments).
+- `PUBLIC_URL=.` ensures compatibility with build systems (like `react-scripts build`) that expect this variable to be defined, fixing errors like `ReferenceError: PUBLIC_URL is not defined` during production builds.
+
+## Summary of Required Settings
+
+1. **Use `npm start`**. This script itself is already sufficient for most needs.
+2. **Add a `.env` file** (see above) if you still get the "Invalid Host header" after using the start script.
+3. **No need to configure CRA or related workaround tools** (`craco`, `react-app-rewired`, or ejection).
+4. If you ever customize dev server config yourself in `.ve/webpack.config.js`, ensure:
+
+```js
+devServer: {
+  allowedHosts: 'all',
+  host: '0.0.0.0',
+  disableHostCheck: true,
+}
+```
+
+*Note: `disableHostCheck` is deprecated but sometimes needed for backward compatibility.*
+
 ## Project-specific Solution (KAVIA Template/Custom Webpack)
 
 - This project does **NOT** use Create React App's ejected setup, nor craco, nor react-app-rewired.
