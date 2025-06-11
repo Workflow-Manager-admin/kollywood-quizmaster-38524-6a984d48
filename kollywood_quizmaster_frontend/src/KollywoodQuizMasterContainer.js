@@ -261,15 +261,53 @@ function KollywoodQuizMasterContainer() {
     );
   }
 
-  // Section placeholders for each quiz mode
+  // Simple, themed progress bar placeholder (non-functional, ready for integration)
+  // PUBLIC_INTERFACE
+  function ProgressBarPlaceholder() {
+    return (
+      <div style={{
+        width: '100%',
+        height: 18,
+        margin: "10px 0 26px 0",
+        borderRadius: 9,
+        background: 'var(--kolly-film-border)',
+        boxShadow: "0 1px 6px #d4fe01aa, 0 0 5px #e302dc44",
+        position: 'relative'
+      }}>
+        <div style={{
+          height: '100%',
+          borderRadius: 9,
+          width: "25%", // placeholder value for visual; real value can be dynamically set
+          background: "linear-gradient(90deg, #e302dc 55%, #d4fe01 100%)",
+          boxShadow: "0 0 10px 1px #e302dc55",
+          transition: "width 0.3s"
+        }} />
+        <span style={{
+          position: "absolute",
+          left: "50%",
+          top: "46%",
+          transform: "translate(-50%, -50%)",
+          color: "#fff",
+          fontWeight: 700,
+          textShadow: "0 0 3px #e302dc99",
+          fontSize: 13,
+          letterSpacing: 0.5,
+          opacity: 0.87
+        }}>
+          Progress: 2 / 10
+        </span>
+      </div>
+    );
+  }
+
+  // Section placeholders for each quiz mode with standardized progress bar and results position
   // PUBLIC_INTERFACE
   function BlurredPosterGuessSection({ onBack, onShowResults }) {
     return (
       <SectionContainer title="Blurred Poster Guess" onBack={onBack}>
-        <div>
-          <QuizPlaceholder label="Blurred Poster Guess" />
-          <CluesAndHintsSection />
-        </div>
+        <ProgressBarPlaceholder />
+        <QuizPlaceholder label="Blurred Poster Guess" />
+        <CluesAndHintsSection />
         <SectionResult onShowResults={onShowResults} />
       </SectionContainer>
     );
@@ -279,6 +317,7 @@ function KollywoodQuizMasterContainer() {
   function CharacterMovieMatchSection({ onBack, onShowResults }) {
     return (
       <SectionContainer title="Character-Movie Match" onBack={onBack}>
+        <ProgressBarPlaceholder />
         <QuizPlaceholder label="Character-Movie Match" />
         <CluesAndHintsSection />
         <SectionResult onShowResults={onShowResults} />
@@ -290,6 +329,7 @@ function KollywoodQuizMasterContainer() {
   function MovieBingoSection({ onBack, onShowResults }) {
     return (
       <SectionContainer title="Movie Bingo" onBack={onBack}>
+        <ProgressBarPlaceholder />
         <QuizPlaceholder label="Movie Bingo" />
         <CluesAndHintsSection />
         <SectionResult onShowResults={onShowResults} />
@@ -301,6 +341,7 @@ function KollywoodQuizMasterContainer() {
   function MovieTimelineChallengeSection({ onBack, onShowResults }) {
     return (
       <SectionContainer title="Movie Timeline Challenge" onBack={onBack}>
+        <ProgressBarPlaceholder />
         <QuizPlaceholder label="Movie Timeline Challenge" />
         <CluesAndHintsSection />
         <SectionResult onShowResults={onShowResults} />
@@ -312,6 +353,7 @@ function KollywoodQuizMasterContainer() {
   function SpinTheWheelSection({ onBack, onShowResults }) {
     return (
       <SectionContainer title="Spin the Wheel" onBack={onBack}>
+        <ProgressBarPlaceholder />
         <QuizPlaceholder label="Spin the Wheel" />
         <CluesAndHintsSection />
         <SectionResult onShowResults={onShowResults} />
@@ -323,6 +365,7 @@ function KollywoodQuizMasterContainer() {
   function CastComboSection({ onBack, onShowResults }) {
     return (
       <SectionContainer title="Cast Combo" onBack={onBack}>
+        <ProgressBarPlaceholder />
         <QuizPlaceholder label="Cast Combo" />
         <CluesAndHintsSection />
         <SectionResult onShowResults={onShowResults} />
