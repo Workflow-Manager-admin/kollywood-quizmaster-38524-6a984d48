@@ -5,11 +5,12 @@
   --text-secondary: rgba(255, 255, 255, 0.7);
   --border-color: rgba(255, 255, 255, 0.1);
 
-  /* Kollywood QuizMaster Theme */
+  /* Kollywood QuizMaster Vibrant Theme */
   --kolly-primary: #e302dc;
   --kolly-secondary: #d4fe01;
   --kolly-accent: #0e0c0c;
-  --kolly-glow: 0 0 12px #e302dc99, 0 0 28px #d4fe010f;
+  --kolly-glow: 0 0 20px #e302dc88, 0 0 28px #d4fe010d;
+  --kolly-film-border: repeating-linear-gradient(90deg, #d4fe01 0 11px, #e302dc 11px 19px, #0e0c0c 19px 30px);
 }
 
 /* Kollywood Container Styles */

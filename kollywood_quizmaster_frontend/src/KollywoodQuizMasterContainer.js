@@ -79,7 +79,13 @@ function KollywoodQuizMasterContainer() {
         }}
         className="kolly-backdrop"
       >
-        <div className="kolly-movie-strip" />
+        <div
+          className="kolly-movie-strip"
+          style={{
+            border: "3.5px solid #d4fe01",
+            filter: "drop-shadow(0 0 8px #e302dc99)",
+          }}
+        />
         <h2
           className="kolly-section-header"
           style={{
@@ -129,6 +135,16 @@ function KollywoodQuizMasterContainer() {
       <div className="kolly-container kolly-fullwidth">
         <div className="container" style={{ paddingBottom: "32px" }}>
           <div style={{ textAlign: "center", marginBottom: 48 }}>
+            <div
+              style={{
+                height: "14px",
+                width: "190px",
+                background: "var(--kolly-film-border)",
+                borderRadius: "11px",
+                margin: "0 auto 11px auto",
+                boxShadow: "0 1px 8px #e302dc66"
+              }}
+            />
             <h1 className="kolly-section-header" style={{marginBottom: "10px"}}>
               <span className="kolly-accent-underline">Kollywood QuizMaster</span>{" "}
               <span role="img" aria-label="clapperboard">🎬</span>
@@ -139,7 +155,7 @@ function KollywoodQuizMasterContainer() {
                 fontSize: "1.14rem",
                 fontWeight: 500,
                 marginBottom: 10,
-                textShadow: "0 0 6px #d4fe01",
+                textShadow: "0 0 6px #d4fe01"
               }}
             >
               Choose your Kollywood quiz adventure!
@@ -147,7 +163,8 @@ function KollywoodQuizMasterContainer() {
             <div style={{ color: "#eee", opacity: 0.77, fontSize: 16 }}>
               Each mode offers 10 movie challenges, clues, movie vibes & results!
             </div>
-            <div className="kolly-movie-dots" aria-hidden>
+            <div className="kolly-movie-dots" aria-hidden={true}>
+              <span className="kolly-dot" />
               <span className="kolly-dot" />
               <span className="kolly-dot" />
               <span className="kolly-dot" />
@@ -185,7 +202,24 @@ function KollywoodQuizMasterContainer() {
                 <button
                   className="btn btn-large"
                   onClick={() => onSelectMode(mode.key)}
+                  style={{
+                    position: "relative",
+                  }}
                 >
+                  <span
+                    style={{
+                      position: "absolute",
+                      left: -14,
+                      top: -9,
+                      color: "#e302dc",
+                      fontSize: "1.41em",
+                      pointerEvents: "none",
+                      filter: "drop-shadow(0 1px 6px #e302dc88)"
+                    }}
+                    aria-hidden
+                  >
+                    ✨
+                  </span>
                   Play {mode.label}
                 </button>
                 <div
@@ -344,15 +378,33 @@ function KollywoodQuizMasterContainer() {
           padding: 40,
           color: "#a6bd00",
           textAlign: "center",
+          position: "relative"
         }}
       >
-        <h2 style={{ color: "#e302dc", marginBottom: 16 }}>Quiz Results</h2>
+        <h2 style={{
+          color: "#e302dc",
+          marginBottom: 16,
+          textShadow: "0 0 9px #e302dc44"
+        }}>Quiz Results</h2>
         <p style={{ color: "#d4fe01", marginBottom: 24 }}>
           Your summary, score and correct answers will be shown here.
         </p>
         <button className="btn btn-large" onClick={onDashboard}>
           Return to Dashboard
         </button>
+        <div
+          style={{
+            position: "absolute",
+            left: "50%",
+            transform: "translateX(-50%)",
+            bottom: "-17px",
+            height: "14px",
+            width: "180px",
+            background: "repeating-linear-gradient(90deg, #d4fe01 0 12px, #e302dc 12px 19px, #0e0c0c 19px 26px)",
+            borderRadius: "9px",
+            boxShadow: "0 1px 8px #e302dc55"
+          }}
+        />
       </div>
     );
   }
@@ -374,7 +426,19 @@ function KollywoodQuizMasterContainer() {
         >
           &larr; Back to Dashboard
         </button>
-        <h2 style={{ color: "#e302dc", marginBottom: 15 }}>{title}</h2>
+        <h2
+          style={{
+            color: "#e302dc",
+            marginBottom: 15,
+            borderBottom: "3.5px dashed #d4fe01",
+            paddingBottom: "7px",
+            fontFamily: "'Inter', 'Roboto', 'Arial', sans-serif",
+            letterSpacing: "0.04em",
+            textShadow: "0 0 9px #e302dc44"
+          }}
+        >
+          {title}
+        </h2>
         {children}
       </div>
     );

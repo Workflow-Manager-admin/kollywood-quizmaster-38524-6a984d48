@@ -11,9 +11,9 @@ asset bundle.js 1.42 MiB [emitted] (name: main)
 asset index.html 1.92 KiB [emitted]
 runtime modules 27.5 KiB 14 modules
 modules by path ./node_modules/ 1.24 MiB 31 modules
-modules by path ./src/ 28.9 KiB
-  modules by path ./src/*.css 7.49 KiB 4 modules
-  modules by path ./src/*.js 21.4 KiB
+modules by path ./src/ 36.2 KiB
+  modules by path ./src/*.css 11.2 KiB 4 modules
+  modules by path ./src/*.js 25 KiB
     ./src/index.js 530 bytes [built] [code generated]
     + 2 modules
 modules by path ./.ve/ 15.1 KiB
@@ -24,24 +24,78 @@ modules by path ./.ve/ 15.1 KiB
     ./.ve/EditorOverlay.css 2.25 KiB [built] [code generated]
     ./node_modules/css-loader/dist/cjs.js!./.ve/EditorOverlay.css 697 bytes [built] [code generated]
   ./.ve/EditorOverlay.jsx 1.58 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 1439 ms
+webpack 5.99.9 compiled successfully in 1473 ms
 assets by status 1.92 KiB [cached] 1 asset
 assets by path *.js 1.43 MiB
   asset bundle.js 1.42 MiB [emitted] (name: main)
-  asset main.5c8330a230f0be8dd614.hot-update.js 8.55 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.5c8330a230f0be8dd614.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.43 MiB = bundle.js 1.42 MiB main.5c8330a230f0be8dd614.hot-update.js 8.55 KiB
+  asset main.a3f356981ab6103155ef.hot-update.js 8.67 KiB [emitted] [immutable] [hmr] (name: main)
+asset main.a3f356981ab6103155ef.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.43 MiB = bundle.js 1.42 MiB main.a3f356981ab6103155ef.hot-update.js 8.67 KiB
 cached modules 1.28 MiB [cached] 42 modules
 runtime modules 27.5 KiB 14 modules
-./node_modules/css-loader/dist/cjs.js!./src/App.css 5.93 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 70 ms
+./node_modules/css-loader/dist/cjs.js!./src/App.css 6.05 KiB [built] [code generated]
+webpack 5.99.9 compiled successfully in 46 ms
+assets by status 1.43 MiB [cached] 2 assets
+cached modules 1.27 MiB (javascript) 27.5 KiB (runtime) [cached] 56 modules
+./src/KollywoodQuizMasterContainer.js 22.8 KiB [built]
+webpack 5.99.9 compiled successfully in 122 ms
 assets by status 1.92 KiB [cached] 1 asset
 assets by path *.js 1.45 MiB
   asset bundle.js 1.42 MiB [emitted] (name: main)
-  asset main.19cc41b226289e22a618.hot-update.js 30.3 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.19cc41b226289e22a618.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.45 MiB = bundle.js 1.42 MiB main.19cc41b226289e22a618.hot-update.js 30.3 KiB
+  asset main.5b704968777ecf19a95d.hot-update.js 30.4 KiB [emitted] [immutable] [hmr] (name: main)
+asset main.5b704968777ecf19a95d.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.45 MiB = bundle.js 1.42 MiB main.5b704968777ecf19a95d.hot-update.js 30.4 KiB
 cached modules 1.27 MiB [cached] 42 modules
 runtime modules 27.5 KiB 14 modules
-./src/KollywoodQuizMasterContainer.js 22.8 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 144 ms
+./src/KollywoodQuizMasterContainer.js 22.9 KiB [built] [code generated]
+webpack 5.99.9 compiled successfully in 112 ms
+assets by status 1.92 KiB [cached] 1 asset
+assets by path *.js 1.45 MiB
+  asset bundle.js 1.42 MiB [emitted] (name: main)
+  asset main.c17e3a3319a2e6698528.hot-update.js 30.9 KiB [emitted] [immutable] [hmr] (name: main)
+asset main.c17e3a3319a2e6698528.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.45 MiB = bundle.js 1.42 MiB main.c17e3a3319a2e6698528.hot-update.js 30.9 KiB
+cached modules 1.27 MiB [cached] 42 modules
+runtime modules 27.5 KiB 14 modules
+./src/KollywoodQuizMasterContainer.js 23.3 KiB [built] [code generated]
+webpack 5.99.9 compiled successfully in 81 ms
+assets by status 1.92 KiB [cached] 1 asset
+assets by path *.js 1.45 MiB
+  asset bundle.js 1.42 MiB [emitted] (name: main)
+  asset main.d1b9201c84a43d5e32b1.hot-update.js 31.1 KiB [emitted] [immutable] [hmr] (name: main)
+asset main.d1b9201c84a43d5e32b1.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.45 MiB = bundle.js 1.42 MiB main.d1b9201c84a43d5e32b1.hot-update.js 31.1 KiB
+cached modules 1.27 MiB [cached] 42 modules
+runtime modules 27.5 KiB 14 modules
+./src/KollywoodQuizMasterContainer.js 23.4 KiB [built] [code generated]
+webpack 5.99.9 compiled successfully in 82 ms
+assets by status 1.92 KiB [cached] 1 asset
+assets by path *.js 1.46 MiB
+  asset bundle.js 1.43 MiB [emitted] (name: main)
+  asset main.1a0e5418f5c194564899.hot-update.js 31.7 KiB [emitted] [immutable] [hmr] (name: main)
+asset main.1a0e5418f5c194564899.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.46 MiB = bundle.js 1.43 MiB main.1a0e5418f5c194564899.hot-update.js 31.7 KiB
+cached modules 1.27 MiB [cached] 42 modules
+runtime modules 27.5 KiB 14 modules
+./src/KollywoodQuizMasterContainer.js 24 KiB [built] [code generated]
+webpack 5.99.9 compiled successfully in 72 ms
+assets by status 1.92 KiB [cached] 1 asset
+assets by path *.js 1.46 MiB
+  asset bundle.js 1.43 MiB [emitted] (name: main)
+  asset main.abbbd5f62f41798de413.hot-update.js 32 KiB [emitted] [immutable] [hmr] (name: main)
+asset main.abbbd5f62f41798de413.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.46 MiB = bundle.js 1.43 MiB main.abbbd5f62f41798de413.hot-update.js 32 KiB
+cached modules 1.27 MiB [cached] 42 modules
+runtime modules 27.5 KiB 14 modules
+./src/KollywoodQuizMasterContainer.js 24.2 KiB [built] [code generated]
+webpack 5.99.9 compiled successfully in 98 ms
+assets by status 1.92 KiB [cached] 1 asset
+assets by path *.js 1.46 MiB
+  asset bundle.js 1.43 MiB [emitted] (name: main)
+  asset main.3e7f4b96498be2c207c4.hot-update.js 32.6 KiB [emitted] [immutable] [hmr] (name: main)
+asset main.3e7f4b96498be2c207c4.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.46 MiB = bundle.js 1.43 MiB main.3e7f4b96498be2c207c4.hot-update.js 32.6 KiB
+cached modules 1.27 MiB [cached] 42 modules
+runtime modules 27.5 KiB 14 modules
+./src/KollywoodQuizMasterContainer.js 24.8 KiB [built] [code generated]
+webpack 5.99.9 compiled successfully in 76 ms
